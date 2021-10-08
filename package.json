@@ -1,0 +1,25 @@
+{
+  "name": "marketplace",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "workspaces": [
+    "./ui/*"
+  ],
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.4.0"
+  },
+  "scripts": {
+    "prettier": "prettier --check \"ui/**/src/**/**/*.js*\"",
+    "prettier:fix": "prettier --write \"ui/**/src/**/**/*.js*\"",
+    "lint": "eslint ui/**/src --ext .js,.jsx",
+    "lint:fix": "eslint --fix ui/**/src --ext .js,.jsx"
+  }
+}

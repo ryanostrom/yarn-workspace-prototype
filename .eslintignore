@@ -1,0 +1,7 @@
+config/*
+test/*
+node_modules/**
+dist/**
+scripts/*
+public/**
+.DS_Store
